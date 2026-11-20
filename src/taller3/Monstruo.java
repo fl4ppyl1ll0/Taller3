@@ -7,7 +7,8 @@ public abstract class Monstruo {
 	private int fuerza;
 	private int resitencia;
 	private boolean usado;
-	public Monstruo(String tipo, int vida, int velocidad, int fuerza, int resitencia, boolean usado) {
+	
+	public Monstruo(String tipo, int vida, int velocidad, int fuerza, int resitencia) {
 		super();
 		this.tipo = tipo;
 		this.vida = vida;
