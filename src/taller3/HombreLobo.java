@@ -1,25 +1,29 @@
 package taller3;
 
-public class HombreLobo extends Monstruo{
-	private int velocidadVuelo;
-    private int resistenciaSol;
+public class HombreLobo extends Monstruo implements Mordedor, Furioso{
+	private int ferocidad;
+    private int faseLunar;
     
 	public HombreLobo(int vida, int velocidad, int fuerza, int resitencia,	int velocidadVuelo, int resistenciaSol) {
 		super("HombreLobo", vida, velocidad, fuerza, resitencia);
-		this.velocidadVuelo = velocidadVuelo;
-		this.resistenciaSol = resistenciaSol;
+		this.ferocidad = ferocidad;
+        this.faseLunar = faseLunar;
 	}
 
-	@Override
-	public double aceptar(VisitadorMinijuego visitor) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	public int getFerocidad() { return ferocidad; }
+    public int getFaseLunar() { return faseLunar; }
 
-	@Override
-	public String getDescripcion() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
+    @Override
+    public double aceptar(VisitadorMinijuego visitor) { return visitor.visitar(this); }
+
+    @Override
+    public String getDescripcion() {
+        return descripcionBase() + " | Ferocidad " + ferocidad + " | Luna " + faseLunar;
+    }
+
+    @Override
+    public String morder() { return "El Hombre Lobo muerde con unas fauces enormes."; }
+
+    @Override
+    public String enfurecerse() { return "El Hombre Lobo aúlla a la luna y se llena de furia."; }
 }

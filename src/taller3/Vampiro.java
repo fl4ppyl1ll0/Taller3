@@ -1,6 +1,6 @@
 package taller3;
 
-public class Vampiro extends Monstruo{
+public class Vampiro extends Monstruo implements Mordedor, Volador{
 	private int velocidadVuelo;
     private int resistenciaSol;
     
@@ -12,14 +12,21 @@ public class Vampiro extends Monstruo{
 
 	@Override
 	public double aceptar(VisitadorMinijuego visitor) {
-		// TODO Auto-generated method stub
-		return 0;
+		return visitor.visitar(this);
 	}
 
 	@Override
 	public String getDescripcion() {
-		// TODO Auto-generated method stub
-		return null;
+		return descripcionBase() + " | Vuelo " + velocidadVuelo + " | Sol " + resistenciaSol;
+
 	}
+
+	@Override
+    public String morder() { 
+		return "El Vampiro clava sus colmillos con elegancia siniestra."; }
+
+    @Override
+    public String volar() { 
+    	return "El Vampiro se convierte en murciélago y surca el cielo."; }
 	
 }
