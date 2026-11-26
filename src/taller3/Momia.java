@@ -7,5 +7,17 @@ public class Momia extends Monstruo{
 		super("Momia", vida, velocidad, fuerza, resitencia);
 		this.longitudVendajes = longitudVendajes;
 	}
+
+	@Override
+	public double aceptar(VisitadorMinijuego visitor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getDescripcion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

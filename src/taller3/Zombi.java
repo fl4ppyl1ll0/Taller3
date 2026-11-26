@@ -11,6 +11,18 @@ public class Zombi extends Monstruo{
 	public int getFuerzaMordida() {
 		return fuerzaMordida;
 	}
+
+	@Override
+	public double aceptar(VisitadorMinijuego visitor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getDescripcion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

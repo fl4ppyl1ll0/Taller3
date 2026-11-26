@@ -1,5 +1,5 @@
 package taller3;
 
-public class WilliesGame {
+public class SobrevivirAmanecer {
 //despues de ensayo le cambio el nombre lmao
 }
