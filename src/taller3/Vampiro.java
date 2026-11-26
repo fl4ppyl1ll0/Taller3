@@ -10,6 +10,14 @@ public class Vampiro extends Monstruo implements Mordedor, Volador{
 		this.resistenciaSol = resistenciaSol;
 	}
 
+	public int getVelocidadVuelo() {
+		return velocidadVuelo;
+	}
+
+	public int getResistenciaSol() {
+		return resistenciaSol;
+	}
+
 	@Override
 	public double aceptar(VisitadorMinijuego visitor) {
 		return visitor.visitar(this);

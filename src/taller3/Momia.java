@@ -8,6 +8,10 @@ public class Momia extends Monstruo implements Regenerable, Furioso{
 		this.longitudVendajes = longitudVendajes;
 	}
 
+	public int getLongitudVendajes() {
+		return longitudVendajes;
+	}
+
 	@Override
 	public double aceptar(VisitadorMinijuego visitor) {
 		return visitor.visitar(this);
