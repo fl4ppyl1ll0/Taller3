@@ -1,7 +1,7 @@
 Taller 03 - Spooky Season 🎃
 
-Simulación en consola (Java) de minijuegos de Halloween donde cada jugador se transforma en un monstruo distinto (Zombi, Vampiro, Momia u Hombre Lobo) para cada desafío y compite por el mejor puntaje. Proyecto del curso de Programación Orientada a Objetos.
-
+Simulación en consola (Java) de minijuegos de Halloween donde cada jugador se transforma en un monstruo distinto (Zombi, Vampiro, Momia u Hombre Lobo) para cada desafío y compite por el mejor puntaje. Proyecto del curso de Programación Orientada a 
+Objetos.
 Integrante
 Florencia Araceli Lillo Ossandón - 21.950.521-3 - fl4ppyl1ll0 https://github.com/fl4ppyl1ll0
 
@@ -14,11 +14,11 @@ Instrucciones de ejecución
 bash
 git clone https://github.com/fl4ppyl1ll0/Taller3
 cd <repositorio>
-2. Compilar
+3. Compilar
 bash
 mkdir -p out
 javac -d out src/taller03/*.java
-3. Ejecutar
+5. Ejecutar
 
 Ejecutar desde la carpeta raíz del proyecto, para que el programa encuentre Monstruos.txt y Registros.txt:
 
