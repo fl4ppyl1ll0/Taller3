@@ -1,6 +1,6 @@
 package taller3;
 
-public class CazaCabalaza implements Minijuego {
+public class CazaCalabazas implements Minijuego {
 	@Override
 	public String getNombre() {
 		return "Caza de Calabazas";
