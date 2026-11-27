@@ -74,7 +74,6 @@ HombreLobo;Vida;Velocidad;Fuerza;Resistencia;Ferocidad;FaseLunar
 
 ## Diseño
 
-![Diagrama UML](docs/diagrama_uml.png)
 
 - **Herencia:** `Monstruo` (abstracta) → `Zombi`, `Vampiro`, `Momia`, `HombreLobo`.
 - **Interfaces de habilidad:** `Mordedor`, `Volador`, `Regenerable`, `Furioso`. Solo definen qué mensaje mostrar; no conocen los minijuegos ni el multiplicador. Se detectan con `instanceof` únicamente para armar el menú de habilidades.
